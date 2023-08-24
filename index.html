@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Microsoft To Do</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="footer.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/png" href="https://to-do-cdn.microsoft.com/static-assets/e803db318e415cb6de36a86389ec18a83bd6537fda2f90b84a27bbe1c118829c/icons/favicon.ico" data-react-helmet="true">
+
+<body>
+  <header>
+    <!-- This is the Laptop Container for the Nav Bar -->
+    <div class="nav__laptop__container">
+      <!-- This Section Covers the LEFT side of the Nav Bar -->
+      <div class="left__menu">
+        <div class="logo__laptop">
+            <a href="https://www.microsoft.com/en-my/"><img class="logo__laptop__view"
+              src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt=""></a>
+        </div>
+        <div class="nav__menu">
+          <div class="left__menu__links">
+            <ul class="left__menu__container">
+              <li class="menu__items__left"><a href="https://www.microsoft.com/en-my/microsoft-365?rtc=1">Microsoft
+                  365</a></li>
+              <li class="menu__items__left"><a
+                  href="https://www.microsoft.com/en-my/microsoft-teams/group-chat-software?rtc=1">Teams</a>
+              </li>
+              <li class="menu__items__left"><a href="https://www.microsoft.com/en-us/windows/?r=1">Surface</a></li>
+              <li class="menu__items__left"><a href="https://www.xbox.com/en-GB/">Xbox</a></li>
+              <li class="menu__items__left"><a
+                  href="https://www.microsoft.com/en-us/store/b/sale?icid=gm_nav_L0_salepage">Deals</a>
+              </li>
+              <li class="menu__items__left"><a href="https://www.microsoft.com/en-us/store/b/business">Small
+                  Business</a></li>
+              <li class="menu__items__left"><a href="https://www.microsoft.com/en-us/store/b/business">Support</a></li>
+              <li class="menu__items__left"><a href="https://support.microsoft.com/en-us">More</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- This Section Covers the RIGHT side of the Nav Bar -->
+      <div class="right__menu">
+        <div class="right__menu__links">
+          <ul>
+            <div class="icon__laptop">
+              <button class="mega__menu__button"><span>All Microsoft</span><i
+                  class='bx bx-chevron-down'></i></button></i>
+            </div>
+            <div class="icon__laptop">
+              <li class="menu__items__right">Search</li>
+              <span class="laptop__icon"><a href=""><i class='bx bx-search bx-rotate-90'></i></a></span>
+            </div>
+            <div class="icon__laptop">
+              <li class="menu__items__right"><a href="https://www.microsoft.com/en-us/store/cart">Cart</a></li>
+              <span class="laptop__icon"><a
+                  href="https://todo.microsoft.com/tasks/?app=&ru=https%3A%2F%2Ftodo.microsoft.com%2Ftasks%2F"><i
+                    class='bx bx-cart'></i></a></span>
+            </div>
+            <div class="icon__laptop">
+              <li class="menu__items__right"><a
+                  href="signin-page.html">Sign
+                  In</a></li>
+              <span class="laptop__icon"><a
+                  href="signin-page.html"><i
+                    class='bx bx-user-circle'></i></a></span>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- This is the mega-menu container -->
+    <div class="mega__menu__container">
+      <div class="submenu">
+        <div class="submenu-column">
+          <h3>Software</h3>
+          <ul>
+            <li><a href="https://www.microsoft.com/en-us/store/apps/windows?icid=CNavAppsWindowsApps">Windows Apps</a>
+            </li>
+            <li><a href="https://www.microsoft.com/ai">AI</a></li>
+            <li><a href="https://outlook.live.com/owa/">Outlook</a></li>
+            <li><a href="https://onedrive.live.com/about/en-us/">One Drive</a></li>
+            <li><a href="https://www.microsoft.com/EN-US/microsoft-teams/group-chat-software">Microsoft Teams</a></li>
+            <li><a href="https://www.onenote.com/">One Note</a></li>
+            <li><a href="https://www.microsoft.com/edge">Microsoft Edge</a></li>
+            <li><a href="https://www.skype.com/en/">Skype</a></li>
+          </ul>
+        </div>
+        <div class="submenu-column">
+          <h3>PC & Devices</h3>
+          <ul>
+            <li><a href="https://www.microsoft.com/en-us/store/b/pc?icid=CNavDevicesPC">Computer</a></li>
+            <li><a href="https://www.microsoft.com/en-us/store/b/xbox?icid=CNavDevicesXbox">Shop Xbox</a></li>
+            <li><a
+                href="https://www.microsoft.com/en-us/store/b/accessories?icid=CNavDevicesAccessories">Accessories</a>
+            </li>
+            <li><a href="https://www.microsoft.com/en-us/store/b/virtualreality?icid=CNavVirtualReality">VR & Mixed
+                Reality</a></li>
+          </ul>
+        </div>
+        <div class="submenu-column">
+          <h3>Entertainment</h3>
+          <ul>
+            <li><a
+                href="https://www.xbox.com/en-us/games/store/xbox-game-pass-ultimate/cfq7ttc0khs0?icid=CNavAllXboxGamePassUltimate">Xbox
+                Game Pass Ultimate</a></li>
+            <li><a href="https://www.xbox.com/en-us/games/store/pc-game-pass/cfq7ttc0kgq8?icid=CNavAllPCGamePass">PC
+                Game Pass</a></li>
+            <li><a href="https://www.microsoft.com/en-us/store/b/xboxgames?icid=CNavGamesXboxGames">Xbox Games</a></li>
+            <li><a href="https://www.microsoft.com/en-us/store/games/windows?icid=CNavGamesWindowsGames">PC and Windows
+                Games</a></li>
+            <li><a href="https://www.microsoft.com/en-us/store/movies-and-tv?icid=TopNavMoviesTv">Movies and TV</a></li>
+          </ul>
+        </div>
+        <div class="submenu-column">
+          <h3>Business</h3>
+          <ul>
+            <li><a href="https://www.microsoft.com/en-us/microsoft-cloud">Microsoft Cloud</a></li>
+            <li><a href="https://www.microsoft.com/en-us/security">Microsoft Security</a></li>
+            <li><a href="https://dynamics.microsoft.com/en-us/">Dynamics 365</a></li>
+            <li><a href="https://www.microsoft.com/en-us/microsoft-365/business">Microsoft 365 for Business</a></li>
+            <li><a href="https://powerplatform.microsoft.com/en-us/">Microsoft Power Platform</a></li>
+            <li><a href="https://www.microsoft.com/en-us/windows-365">Windows 365</a></li>
+            <li><a href="https://www.microsoft.com/en-us/industry">Microsoft Industry</a></li>
+            <li><a href="https://www.microsoft.com/en-us/store/b/business?icid=CNavBusinessStore">Small Business</a>
+            </li>
+          </ul>
+        </div>
+        <div class="submenu-column">
+          <h3>Developer IT</h3>
+          <ul>
+            <li><a href="https://azure.microsoft.com/en-us/">Azure</a></li>
+            <li><a href="https://developer.microsoft.com/en-us/">Developer Center</a></li>
+            <li><a href="https://learn.microsoft.com/docs/">Documentation</a></li>
+            <li><a href="https://learn.microsoft.com/">Microsoft Learn</a></li>
+            <li><a href="https://techcommunity.microsoft.com/">Microsoft Tech Community</a></li>
+            <li><a href="https://azuremarketplace.microsoft.com/en-us/">Azure Marketplace</a></li>
+            <li><a href="https://appsource.microsoft.com/en-us/">App Source</a></li>
+            <li><a href="https://visualstudio.microsoft.com/">Visual Studio</a></li>
+          </ul>
+        </div>
+        <div class="submenu-column">
+          <h3>Other</h3>
+          <ul>
+            <li><a href="https://www.microsoft.com/rewards">Microsoft Rewards</a></li>
+            <li><a href="https://www.microsoft.com/en-us/download">Free Downloads & Security</a></li>
+            <li><a href="https://www.microsoft.com/en-us/education">Education</a></li>
+            <li><a href="https://www.microsoft.com/en-us/store/b/microsoft-trade-in">Trade-in for Cash</a></li>
+            <li><a href="https://www.microsoft.com/en-us/store/b/gift-cards">Gift Cards</a></li>
+            <li><a href="https://www.microsoft.com/en-US/store/b/education">Students and Parents Deals</a></li>
+            <li><a href="https://www.microsoft.com/licensing/">Licensing</a></li>
+            <li><a href="https://unlocked.microsoft.com/">Unlocked Stories</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--This Section Covers the TABLET/MOBILE Nav Bar-->
+    <div class="nav__mobile__container">
+      <div class="left__menu__mobile">
+        <div class="menu__icon__mobile"><i class='bx bx-menu'></i></div>
+        <div class="search__icon__mobile"><i class='bx bx-search-alt-2 bx-rotate-90'></i></div>
+      </div>
+      <div class="center__menu__mobile">
+        <div class="logo__mobile"> <a href="https://www.microsoft.com/en-my/"><img class="logo__laptop__view"
+          src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="Microsoft Logo"></a>
+        </div>
+      </div>
+      <div class="right__menu__mobile">
+        <div class="cart__icon__mobile"><i class='bx bx-cart mobile'></i></div>
+        <div class="signin__icon_mobile"><i class='bx bx-user-circle'></i></div>
+      </div>
+    </div>
+    <hr>
+  </header>
+
+  <!--Body-->
+  <main class="main__container">
+    <div class="container2">
+      <img class="welcome__img__left"
+        src="https://to-do-cdn.microsoft.com/static-assets/c26cd0d92ec61ba2c661adefaa535ab3cc4fb124f347a850fded8034dad5d360/icons/welcome-left.png"
+        alt="guy on the right">
+    </div>
+
+ <div class="container3">
+
+      <img class="tick-logo"
+        src="https://to-do-cdn.microsoft.com/static-assets/c87265a87f887380a04cf21925a56539b29364b51ae53e089c3ee2b2180148c6/icons/logo.png"
+        alt="tick-logo">
+      <br>
+
+      <h1 class="hero__header">Microsoft To Do</h1>
+
+      <img class="tablet__view__img"
+        src="https://to-do-cdn.microsoft.com/static-assets/da7ea2e49739d43b8e3a4d59c6029b078a13f81b18a7b236cd0ebfc41495dfd1/icons/welcome-center.png"
+        alt="center-img">
+
+      <h2 class="hero_subheader">To Do gives you focus, from work to</h2>
+      <h2 class="hero_subheader">play</h2>
+
+      <br>
+
+      <div class="CTA__button">
+        <a href="signin-page.html">
+          <button class="To_Do_App">Get Started</button>
+        </a>
+      </div>
+      <a class="learn_more" href="https://www.microsoft.com/en-my/microsoft-365/microsoft-to-do-list-app?rtc=1">Learn
+        More</a>
+      <p class="hero__header_2">Download To Do</p>
+
+      <div class="logo-btns">
+        <a href="https://play.google.com/store/apps/details?id=com.microsoft.todos&pli=1"><img class="app__icon"
+            src="android-logo.png" alt="andriod"></a>
+        <a href="https://apps.microsoft.com/store/detail/microsoft-to-do-lists-tasks-reminders/9NBLGGH5R558?hl=en-my&gl=my&rtc=2&activetab=pivot%3Aoverviewtab"><img
+            class="app__icon" src="windows-logo.png" alt="window"></a>
+        <a href="https://apps.apple.com/app/id1212616790?mt=8"><img class="app__icon" src="apple-logo.png"
+            alt="apple"></a>
+      </div>
+      <a class="Term_use" href="https://www.microsoft.com/en-us/servicesagreement">Terms of use for To Do</a>
+
+ </div>
+
+    <div class="container4">
+      <img class="welcome__img__right"
+        src="https://to-do-cdn.microsoft.com/static-assets/f2f56b7d4c72910540effed9ccddae703d8d09b94075dddfeeab6cd79def0c60/icons/welcome-right.png"
+        alt="girl on the left">
+    </div>
+
+
+    <script src="toggle.js"></script>
+  </main>
+
+
+  <!--Footer-->
+  <footer>
+    <section class="footer">
+      <div class="footer__menu">
+          <!-- This div is the Upper part of the footer -->
+        <div class="footer__primary__menu">
+          <div class="list__items">
+            <ul>
+              <li>Whats New</li>
+              <li><a href="https://www.microsoft.com/en-us/d/surface-pro-9/93VKD8NP4FVK">Surface Pro</a></li>
+              <li><a href="https://www.microsoft.com/en-us/d/surface-laptop-5/8XN49V61S1BN">Surface Laptop 5</a></li>
+              <li><a href="https://www.microsoft.com/en-us/d/surface-studio-2plus/8VLFQC3597K4">Surface Studio 2+</a>
+              </li>
+              <li><a href="https://www.microsoft.com/en-us/d/surface-laptop-go-2/8PGLPV76MJHN">Surface Laptop Go 2</a>
+              </li>
+              <li><a href="https://www.microsoft.com/en-us/d/surface-laptop-studio/8SRDF62SWKPF">Surface Laptop
+                  Studio</a>
+              </li>
+              <li><a href="https://www.microsoft.com/en-us/d/surface-go-3/904H27D0CBWN">Surface Go 3</a></li>
+              <li><a href="https://www.microsoft.com/microsoft-365">Microsoft 365</a></li>
+              <li><a href="https://www.microsoft.com/wiwndows/windows-11-apps">Windows 11 apps</a></li>
+            </ul>
+          </div>
+          <div class="list__items">
+            <ul>
+              <li>Microsoft Store</li>
+              <li><a href="https://account.microsoft.com/">Account profile</a></li>
+              <li><a href="https://www.microsoft.com/en-us/download">Download Center</a></li>
+              <li><a href="https://go.microsoft.com/fwlink/?linkid=2139749">Microsoft Store support</a></li>
+              <li><a href="https://go.microsoft.com/fwlink/p/?LinkID=824764&clcid=0x409">Returns</a></li>
+              <li><a href="https://account.microsoft.com/orders"> Order Tracking</a></li>
+              <li><a href="https://www.microsoft.com/en-us/store/b/microsoft-trade-in">Trade-in for Cash</a></li>
+              <li><a
+                  href="https://www.microsoft.com/en-us/store/b/why-microsoft-store?icid=footer_why-msft-store_7102020">Mircosoft
+                  Store Promise</a></li>
+              <li><a
+                  href="https://www.microsoft.com/en-us/store/b/payment-financing-options?icid=footer_financing_vcc">Flexible
+                  Payments</a></li>
+            </ul>
+          </div>
+          <div class="list__items">
+            <ul>
+              <li>Education</li>
+              <li><a href="https://www.microsoft.com/en-us/education">Microsoft in education</a></li>
+              <li><a href="https://www.microsoft.com/en-us/education/devices/overview">Devices for education</a></li>
+              <li><a href="https://www.microsoft.com/en-us/education/products/teams">Microsoft Teams for Education</a>
+              </li>
+              <li><a href="https://www.microsoft.com/en-us/education/buy-license/microsoft365">Microsoft 365
+                  Education</a>
+              </li>
+              <li><a href="https://www.microsoft.com/education/how-to-buy">How to Buy for your School</a></li>
+              <li><a href="https://education.microsoft.com/">Educator Training and development</a></li>
+              <li><a href="https://www.microsoft.com/en-us/store/b/education">Deals for students and parents</a></li>
+              <li><a href="https://azure.microsoft.com/en-us/free/students/">Azure for Students</a></li>
+            </ul>
+          </div>
+          <div class="list__items">
+            <ul>
+              <li>Business</li>
+              <li><a href="https://www.microsoft.com/en-us/microsoft-cloud">Microsoft Cloud</a></li>
+              <li><a href="https://www.microsoft.com/en-us/security">Microsoft Security</a></li>
+              <li><a href="https://dynamics.microsoft.com/en-us/">Dynamic 365</a></li>
+              <li><a href="https://www.microsoft.com/en-us/microsoft-365/business/">Microsoft 365</a></li>
+              <li><a href="https://powerplatform.microsoft.com/en-us/">Microsoft Power Platform</a></li>
+              <li><a href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software">Microsoft Teams</a></li>
+              <li><a href="https://www.microsoft.com/en-us/industry">Microsoft Industry</a></li>
+              <li><a href="https://www.microsoft.com/en-us/store/b/business?icid=CNavBusinessStore">Small Business</a>
+              </li>
+            </ul>
+          </div>
+          <div class="list__items">
+            <ul>
+              <li>Developer & IT</li>
+              <li><a href="https://azure.microsoft.com/en-us/">Azure</a></li>
+              <li><a href="https://developer.microsoft.com/en-us/">Developer Center</a></li>
+              <li><a href="https://learn.microsoft.com/docs/">Documentation</a></li>
+              <li><a href="https://learn.microsoft.com/">Microsoft Learn</a></li>
+              <li><a href="https://techcommunity.microsoft.com/">Microsoft Tech Community</a></li>
+              <li><a href="https://azuremarketplace.microsoft.com/en-us/">Azure Market Place</a></li>
+              <li><a href="https://appsource.microsoft.com/en-us/">AppSource</a></li>
+              <li><a href="https://visualstudio.microsoft.com/">Visual Studio</a></li>
+            </ul>
+          </div>
+          <div class="list__items">
+            <ul>
+              <li>Company</li>
+              <li class><a href="https://www.microsoft.com/en-us/about">About Microsoft</a></li>
+              <li class><a href="https://careers.microsoft.com/">Careers</a></li>
+              <li class><a href="https://news.microsoft.com/">Company News</a></li>
+              <li class><a href="https://privacy.microsoft.com/en-us">Privacy at Microsoft</a></li>
+              <li class><a href="https://www.microsoft.com/investor/default.aspx">Investors</a></li>
+              <li class><a href="https://www.microsoft.com/en-us/diversity/">Diversity and Inclusion</a></li>
+              <li class><a href="https://www.microsoft.com/en-us/accessibility">Accessibility</a></li>
+              <li class><a href="https://www.microsoft.com/en-us/sustainability/">Sustainability</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- This div is the bottom part of the footer -->
+        <div class="footer__secondary__menu">
+          <div class="left__side">
+            <i class='bx bx-globe'></i>
+            <span>English (United States)</span>
+            <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 14" xml:space="preserve" height="16"
+              width="43">
+              <title>California Consumer Privacy Act (CCPA) Opt-Out Icon</title>
+              <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z"
+                style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+              <path
+                d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z"
+                style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+              <path
+                d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z"
+                style="fill:#fff"></path>
+              <path
+                d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z"
+                style="fill:#06f"></path>
+            </svg>
+            <span>Your Privacy Choices</span>
+          </div>
+          <div class="right__side">
+            <ul>
+              <li><a href="https://www.microsoft.com/en-us/sitemap1.aspx">Sitemap</a></li>
+              <li><a href="https://support.microsoft.com/contactus">Contact Microsoft</a></li>
+              <li><a href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy</a></li>
+              <li><a href="https://go.microsoft.com/fwlink/?LinkID=206977">Terms of Use</a></li>
+              <li><a href="https://go.microsoft.com/fwlink/?linkid=2196227">Safety and Eco</a></li>
+              <li><a href="https://www.microsoft.com/en-us/legal/compliance/recycling">Recycling</a></li>
+              <li><a href="https://choice.microsoft.com/">About our Ads</a></li>
+              <li><a href="#">@ Microsoft 2023</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+</body>
+
+</html>
