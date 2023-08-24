@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+
+.CTA__button button {
+  padding: .8rem 2.8rem;
+  background-color: #0078d4;
+  border: none;
+  margin-top: 20px;
+  border-radius: 1px;
+  cursor: pointer;
+
+  box-shadow: 3px 2px 7px -2px rgba(0, 0, 0, 0.59);
+  -webkit-box-shadow: 3px 2px 7px -2px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 3px 2px 7px -2px rgba(0, 0, 0, 0.59);
+}
+
+.To_Do_App {
+  font-size: .825rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 50px;
+  padding-top: -100px;
+}
+
+.To_Do_App:hover {
+  opacity: 80%;
+  transition: .3s;
+}
+
+
+.main__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+  z-index: 1;
+  
+}
+
+.hero__header {
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+.hero_subheader {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.hero__header_2 {
+  font-size: 1vw;
+  font-weight: 100;
+  padding-top: 50px;
+
+}
+
+.learn_more {
+  padding-top: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #0071c8;
+}
+
+.learn_more:hover {
+  text-decoration: underline;
+}
+
+.Term_use {
+  font-size: 1vw;
+  font-weight: 110;
+}
+
+.container3 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  font-size: 1rem;
+  max-width: 60rem;
+  padding: 0 4vw 3vw 4vw;
+}
+
+.tick-logo {
+  height: 4vw;
+
+}
+
+.app__icon {
+  position: relative;
+  height: 1.8vw;
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 2px;
+  justify-content: space-between;
+  padding: 3px 3px;
+
+}
+
+.logo-btns {
+  padding-bottom: 100px;
+  display: flex;
+  gap: 20px;
+  padding: 20px 0px;
+
+}
+
+
+.logo-btns a:hover {
+  opacity: 80%;
+  transition: .5s;
+}
+
+
+.welcome__img__left {
+  height: 23vw;
+}
+
+.welcome__img__right {
+  height: 23vw;
+}
+
+.tablet__view__img {
+  height: 17vw;
+}
+
+@media(min-width:1023px) {
+  .tablet__view__img {
+    display: none;
+  }
+}
+
+@media(max-width:1023px) {
+  .hero_subheader {
+    display: none;
+  }
+}
+
+@media(max-width:1024px) {
+  .tablet__view__img {
+    display: block;
+  }
+
+  .welcome__img__left {
+    display: none;
+  }
+
+  .welcome__img__right {
+    display: none;
+  }
+}
+
+.toggle {
+  display: none;
+}

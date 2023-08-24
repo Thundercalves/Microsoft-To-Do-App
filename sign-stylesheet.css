@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    align-self: center;
+    min-height: 100vh;
+    background-image: url(5183000.jpg);
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-height: 280px ;
+    max-width: 440px;
+    min-width: 380px;
+    background: white;
+    padding: 3rem 3rem 3rem 3rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+    
+
+img{
+    height: 1.5rem;
+    padding-top: 10px;
+}
+
+.Sign__In{
+    line-height: 28px;
+    margin: 1rem 0;
+}
+
+
+.Sign__In h1{
+    font-weight: 500;
+}
+
+.User__Details{
+    width: 200px
+}
+
+.User__Placeholder{
+    width: 200px; 
+    height: 30px; 
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+}
+
+input{
+    border: none;
+    width: 300px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none; 
+    border: none;  }
+
+
+hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 350px;
+    color: black;
+    border: 1px solid  grey;
+}
+
+.account__content{
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+p{
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+a{
+    color: #0067b8;
+    text-decoration: none;
+
+}
+
+.SignIn{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.Options{
+    margin-top: 17px;
+    padding: .3rem 3rem .3rem 3rem;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 80px;
+}
+
+.Options:hover{
+    opacity: 80%;
+}
+
+.buttons{
+    margin-top: 35px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: end;
+}
+
+button:hover{
+    transition: 1ms;
+    opacity: 80% ;
+}
+
+.back__btn{
+    padding: 5px 35px 5px 35px;
+    color: black;
+    border: 1px #CCCCCC;
+    background: #CCCCCC;
+    font-size: 16px;
+}
+
+.next__btn{
+    padding: 5px 35px 5px 35px;
+    background: #0067B8;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+
+
+.icon{
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+
+
+@media(max-width:600px){
+    body {
+        width: 100vw;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        align-items: flex-start;
+        justify-content: center;
+        min-height: 100vh;
+        min-width: 70vw;
+        background-image: none;
+        overflow: hidden;
+    }
+
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        min-width: 70vw;
+        padding: 0;
+        background: white;
+        padding: 0;
+        box-shadow: none;
+    }
+    img{
+        height: 1.5rem;
+        padding-top: 10px;
+    }
+    
+    .Sign__In{
+        line-height: 28px;
+        margin: 1rem 0;
+    }
+    
+    
+    .Sign__In h1{
+        font: 1rem;
+        font-weight: 500;
+    }
+    
+    .User__Details{
+        width: 200px
+    }
+    
+    .User__Placeholder{
+        width: 200px; 
+        height: 30px; 
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 14px;
+        border: none;
+    }
+    
+    input{
+        border: none;
+        width: 300px;
+        font-size: 15px;
+    }
+    
+    input:focus {
+        outline: none; 
+        border: none;  }
+    
+    
+    hr{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 70vw;
+        color: black;
+        border: 1px solid  grey;
+    }
+    
+    .account__content{
+        margin: 10px 0;
+        font-size: 13px;
+    }
+    
+    p{
+        margin: 5px 0;
+        font-size: 13px;
+    }
+    
+    a{
+        color: #0067b8;
+        text-decoration: none;
+    
+    }
+    
+    .SignIn{
+        color: black;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    
+    .Options{
+        height: 2.5rem;
+        margin-top: 17px;
+        padding: 0;
+        background-color: white;
+        box-shadow: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 80px;
+        border: 1px solid black;
+        padding-left: 10px;
+    }
+    
+    .buttons{
+        margin-top: 35px;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: end;
+    }
+    
+    button:hover{
+        transition: 1ms;
+        opacity: 80% ;
+    }
+    
+    .back__btn{
+        padding: 5px 35px 5px 35px;
+        color: black;
+        border: 1px #CCCCCC;
+        background: #CCCCCC;
+        font-size: .8rem;
+    }
+    
+    .next__btn{
+        padding: 5px 35px 5px 35px;
+        background: #0067B8;
+        color: white;
+        font-size: .8rem;
+        border: none;
+    }
+
+    .icon{
+        height: 2rem;
+        margin-bottom: 5px;
+    }
+
+
+}
+
+
+
+

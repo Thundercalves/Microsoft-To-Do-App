@@ -1,0 +1,281 @@
+
+
+ /* This is to give the footer section a different color background */
+.footer {
+  background-color: #F2F2F2;
+  border-top: 2px solid #F2F2F2;
+  height: max-content;
+  margin: 0;
+  padding: 0;
+  max-width:100%;
+  padding: 0 0px;
+  padding: 1vh 1.875vw 1vh 1.875vw;
+}
+
+.footer__primary__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  flex-basis: auto;
+}
+
+.list__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.list__items>ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  gap: 7px;
+}
+
+.list__items>li {
+padding: 0;
+}
+
+.list__items a{
+  color: #696969;
+  font-weight: 500;
+  font-size: 0.6875rem !important;
+}
+
+.list__items>ul>li+li:hover {
+  text-decoration: underline;
+}
+
+
+.list__items li:first-child {
+  font-size: 1rem;
+  color: #696969;
+  font-weight: 500;
+}
+
+
+/* Start of Secondary Menu Styling */
+.footer__secondary__menu {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0 4.5vw;
+  padding-bottom: 20px;
+}
+
+/* Display Flex to have the list items into a row*/
+.right__side ul{
+  display: flex;
+ flex-direction: row !important;
+ gap: 10px;
+ justify-content: center;
+ align-items: center;
+
+}
+
+
+/* Some Font Styling for the Links*/
+.right__side>ul>li>a {
+  font-size: 0.6875rem;
+  font-weight: 400;
+  cursor: pointer;
+  color: #696969;
+}
+
+/*Hover Effect when hover over*/
+.right__side>ul>li:hover {
+  text-decoration: underline;
+}
+
+/*This CSS is to prevent the icon to have an hover effect*/
+.right__side>ul>li:last-child:hover{
+  text-decoration: none;
+}
+
+/*Some Font Styling for the Links*/
+.left__side {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.813rem;
+  justify-content: space-between;
+}
+
+.left__side i{
+  font-size: 0.6875rem;
+  color: #696969;
+}
+
+.left__side span{
+  font-size: 0.6875rem;
+  color: #696969;
+}
+
+
+/* Start of Responsive Media Query */
+@media (max-width: 1445px) {
+  .footer{
+    width: 100%;
+  }
+
+
+  .footer__menu{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+
+  .footer__secondary__menu{
+    width: max-content;
+    display: flex;
+    width: 100%;
+  }
+
+}
+
+/* To Transform the Primary Footer to A Grid */
+@media (max-width:1240px){
+  .footer__primary__menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; 
+    justify-content: center;
+    align-content: center;
+    padding-left: 5vw;
+    grid-gap: 10px;
+  }
+
+  }
+
+
+/* Tablet View */
+@media (max-width: 890px) {
+  .footer__menu{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .footer__primary__menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; 
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    grid-gap: 10px;
+  }
+
+  .footer__secondary__menu{
+    margin-top: 20px;
+    padding-left: 30px;
+  }
+
+  .left__side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .right__side ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-left: 10px;
+  }
+
+  .right__side{
+    margin-left: -10px;
+  }
+} 
+
+/* Mobile Phone View */
+@media (max-width: 414px) {
+
+  .footer{
+    padding-bottom: 20px;
+  }
+
+  .footer__primary__menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; 
+    padding: 0;
+  }
+
+  .list__items li:first-child {
+    font-size: 0.813rem;
+    font-weight: 500;
+  }
+
+  .list__items>ul>li>a {
+    color: #696969;
+    font-weight: 500;
+    font-size: 0.6875rem;
+  }
+
+  .list__items>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 10px;
+    padding-left: 20px;
+  }
+  .list__items li {
+    color: #696969;
+    font-weight: 600;
+    font-size: 0.6875rem;
+  }
+  
+  .right__side>ul>li>a {
+    font-size: 0.813rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: #696969;
+  }
+
+  .right__side ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+
+  .footer__secondary__menu{
+    display: flex;
+    padding-left: 10px ;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    }
+
+    .left__side{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .right__side a {
+      font-size: 0.6875rem !important;
+    }
+
+}

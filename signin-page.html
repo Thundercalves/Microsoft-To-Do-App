@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In To Your Account</title>
+  <link rel="stylesheet" href="sign-stylesheet.css">
+  <link rel="icon" type="image/png" href="https://to-do-cdn.microsoft.com/static-assets/e803db318e415cb6de36a86389ec18a83bd6537fda2f90b84a27bbe1c118829c/icons/favicon.ico" data-react-helmet="true">
+</head>
+
+<body>
+  <main>
+    <!-- This is a container for the Sign In Details -->
+    <section class="container">
+      <div class="logo">
+        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="Microsoft Logo">
+      </div>
+      <div class="Sign__In">
+        <h1>Sign in</h1>
+      </div>
+      <!-- This is div for the information input -->
+      <div class="User__Details">
+        <input class="User_Placeholder" type="email" name="userName" id=""
+          placeholder="Email address, phone number or Skype">
+        <hr>
+      </div>
+      <!-- This 2 p tags are the links that will lead to an external page -->
+      <p class="account__content">No account? <span><a href="https://signup.live.com/signup?sru=https%3a%2f%2flogin.live.com%2foauth20_authorize.srf%3flc%3d2057%26client_id%3d3ff8e6ba-7dc3-4e9e-ba40-ee12b60d6d48%26mkt%3dEN-GB%26opid%3dDFC97669186C3B6A%26opidt%3d1692859727%26uaid%3d4754ea18da51408b93bb6f45a5155bf7%26contextid%3dE12374D5EC9AD9B0%26opignore%3d1&mkt=EN-GB&uiflavor=web&lw=1&fl=easi2&client_id=3ff8e6ba-7dc3-4e9e-ba40-ee12b60d6d48&uaid=4754ea18da51408b93bb6f45a5155bf7&suc=3ff8e6ba-7dc3-4e9e-ba40-ee12b60d6d48&lic=1">Create One!</a></span></p>
+      <p><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=3ff8e6ba-7dc3-4e9e-ba40-ee12b60d6d48&scope=openid%20profile%20email%20offline_access&redirect_uri=https%3A%2F%2Ftodo.microsoft.com%2Fauth%2Fcallback&client-request-id=4754ea18-da51-408b-93bb-6f45a5155bf7&response_mode=fragment&response_type=code&x-client-SKU=msal.js.browser&x-client-VER=2.14.1&x-client-OS=&x-client-CPU=&client_info=1&code_challenge=enL4nm4gqN7Qxi2mEus0yBbcaByzeGOtOKEKrVcWcGE&code_challenge_method=S256&prompt=select_account&nonce=7e47b4bc-a449-4798-bad7-7f2c7eb29168&state=eyJpZCI6IjMyMjdkMzVlLTQzZDgtNGJiNS04YjE0LTQ4NWZkMTQ2YTBhMyIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D&sso_reload=true#">Can't access your account?</a></span></p>
+       <!-- This section is the 2 CTA buttons-->
+      <div class="buttons">
+        <a href="index.html">
+          <button class="back__btn">Back</button>
+        </a>
+        <a href="password.html">
+          <button class="next__btn">Next</button>
+        </a>
+    </section>
+
+    <!-- This section is the sign-in options with the key lock icon -->
+    <section class="Options">
+      <div class="password__icon">
+        <img class="icon"
+          src="https://aadcdn.msauth.net/shared/1.0/content/images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg"
+          alt="">
+      </div>
+      <div class="SignIn__Options">
+        <a class="SignIn" href="">Sign-in Options</a>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
