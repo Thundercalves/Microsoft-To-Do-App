@@ -24,7 +24,7 @@
   font-weight: 500;
   color: #fff;
   padding: 50px;
-  padding-top: -100px;
+  padding-top: -150px;
 }
 
 .To_Do_App:hover {
@@ -37,9 +37,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 6rem;
+  padding-top: 3.5rem;
   z-index: 1;
-  
+
 }
 
 .hero__header {
@@ -54,15 +54,14 @@
 }
 
 .hero__header_2 {
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: 100;
   padding-top: 50px;
-
 }
 
 .learn_more {
   padding-top: 20px;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 400;
   color: #0071c8;
 }
@@ -72,7 +71,7 @@
 }
 
 .Term_use {
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: 110;
 }
 
@@ -89,17 +88,16 @@
 }
 
 .tick-logo {
-  height: 4vw;
-
+  height: 6.5rem;
 }
 
 .app__icon {
   position: relative;
-  height: 1.8vw;
+  height: 2rem;
   border: 1px solid rgb(215, 215, 215);
   border-radius: 2px;
   justify-content: space-between;
-  padding: 3px 3px;
+  padding: 5px 10px;
 
 }
 
@@ -127,7 +125,7 @@
 }
 
 .tablet__view__img {
-  height: 17vw;
+  height: 10.5rem;
 }
 
 @media(min-width:1023px) {
@@ -154,7 +152,35 @@
   .welcome__img__right {
     display: none;
   }
+
+  .main__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    z-index: 1;
+  }
+
+  .tick-logo {
+    height: 5rem;
+  }
+
+  .hero__header_2 {
+    font-size: 1rem;
+    font-weight: 100;
+    padding-top: 30px;
+  }
+
+
+  .Term_use {
+    font-size: 1rem;
+    font-weight: 110;
+    padding-bottom: 1rem;
+  }
+
+
 }
+
 
 .toggle {
   display: none;
